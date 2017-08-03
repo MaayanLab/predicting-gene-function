@@ -1,0 +1,4 @@
+Run idg_functions.R and then run idg_predictions.R.
+
+The output of idg_predictions.R should be reviewed carefully - some parts are repeated and may not need to be run again after the first
+time. Also note that idg_predictions.R needs to be run differently for kinase, ion channel, and GPCR genes.
