@@ -1,2 +1,6 @@
 Contains files about the new site (IDG genes and their predicted functions).
 Site is not complete - partial exploration of its creation.
+
+Note:
+Needs complete predicted sets for each gene to run website. (To get predicted sets, need new GMTs of all Enrichr libaries.
+Currently all done and saved on hard drive.)
