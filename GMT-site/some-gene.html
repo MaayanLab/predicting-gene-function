@@ -1,0 +1,15 @@
+<!doctype html>
+<title>{{some_gene}}</title>
+
+<div class="topnav" id="myTopnav">
+	<!-- <a href="test-home.html">Home</a> -->
+	<a href="{{ url_for('testhome') }}">Home</a>
+</div> 
+
+<body>
+	<h2> {{ some_gene.upper() }} </h2>
+
+	{% for x in gene_list %}
+	<p> {{ x }} </p>
+	{% endfor %}
+</body>

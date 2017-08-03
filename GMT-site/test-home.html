@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Predictions</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ">
+		<link href="static/style.css" rel="stylesheet" type = "text/css">
+	</head>
+
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a href="{{ url_for('testhome') }}">Home</a>
+			<!-- <a href="index.html">Kinase-Substrate Networks</a>
+			<a href="ppi.html">Protein Interaction Networks (PPI)</a> -->
+		</div> 
+
+
+		<div class="row" id="title-row">
+			<div class="col text-center">
+				<h1>Genes</h1>
+			</div>
+		</div>
+
+		<div>
+			{% from "_formhelpers.html" import render_field %}
+    		<form action="/" method=post>
+     			<dl>
+        			{{ render_field(form.gene) }}
+
+      			</dl>
+     			<p><input type="submit" value="Search"></p>
+    		</form>
+		</div>
+
+		<div>
+			<ul>
+				<li>Kinases
+					<ul>
+						<li><a href="PRKAG1">PRKAG1</a></li><li>PRKAB1</li><li>ADCK2</li><li>ADCK5</li><li>ALPK3</li><li>ADCK4</li><li>ALPK2</li><li>BCKDK</li><li>CAMKV</li><li>CDKL3</li><li>CDKL4</li><li>CDKL1</li><li>CDKL2</li><li>CDK15</li><li>CDK17</li><li>CDK11B</li><li>CDK14</li><li>CDK18</li><li>CLK4</li><li>CDK10</li><li>CLK3</li><li>CSNK2A2</li><li>DGKH</li><li>DYRK3</li><li>DYRK1B</li><li>DYRK4</li><li>EEF2K</li><li>DYRK2</li><li>ERN2</li><li>FASTK</li><li>GK2</li><li>HIPK4</li><li>ITPKA</li><li>CSNK1G3</li><li>CSNK1G2</li><li>PRKACG</li><li>CSNK1G1</li><li>ITPK1</li><li>PSKH2</li><li>CAMK1D</li><li>TK2</li><li>PRKACB</li><li>PNCK</li><li>CAMK1G</li><li>CAMKK1</li><li>PSKH1</li><li>PHKA1</li><li>RPS6KC1</li><li>PRKCQ</li><li>LMTK3</li><li>MARK4</li><li>MAST3</li><li>LRRK1</li><li>MAP3K14</li><li>LTK</li><li>MAP3K10</li><li>MAST4</li><li>MAST2</li><li>MAPK15</li><li>MAPK4</li><li>MKNK2</li><li>CDC42BPG</li><li>CDC42BPB</li><li>NEK11</li><li>NEK5</li><li>NEK10</li><li>NIM1K</li><li>NEK4</li><li>NEK6</li><li>NRK</li><li>NEK7</li><li>SCYL1</li><li>NRBP2</li><li>PIK3C2G</li><li>PAK7</li><li>PANK3</li><li>PIK3C2B</li><li>PAK3</li><li>PAK6</li><li>SCYL3</li><li>PDIK1L</li><li>PIP4K2C</li><li>PIP5K1A</li><li>PLK5</li><li>PHKG1</li><li>PHKG2</li><li>PI4KA</li><li>PIP5K1B</li><li>PKMYT1</li><li>PKN3</li><li>PRPF4B</li><li>TP53RK</li><li>PRKRA</li><li>PRKY</li><li>PXK</li><li>RIOK1</li><li>RIOK3</li><li>RPS6KL1</li><li>SBK2</li><li>SCYL2</li><li>SBK3</li><li>SGK494</li><li>POMK</li><li>SGK223</li><li>SRPK3</li><li>STK32C</li><li>STK33</li><li>STK32B</li><li>STK40</li><li>STK17A</li><li>STK36</li><li>STK32A</li><li>STK38L</li><li>STKLD1</li><li>STK3</li><li>STK31</li><li>TESK2</li><li>TESK1</li><li>TBCK</li><li>TLK1</li><li>TPK1</li><li>TLK2</li><li>TSSK6</li><li>TSSK1B</li><li>TTBK2</li><li>TSSK4</li><li>TTBK1</li><li>TSSK3</li><li>UCK1</li><li>ULK4</li><li>UCK2</li><li>WNK2</li><li>VRK2</li><li>WEE2</li>	
+					</ul>
+				</li>
+				<li>Ion Channels
+					<ul>
+						<li>HTR3B</li><li>HTR3E</li><li>HTR3D</li><li>CHRNB2</li><li>HTR3C</li><li>CHRND</li><li>CHRNB1</li><li>CHRNA10</li><li>CHRNA2</li><li>CHRNA9</li><li>CHRNG</li><li>ASIC4</li><li>ASIC5</li><li>BEST4</li><li>CACNA2D1</li><li>CACNA2D3</li><li>CACNA2D4</li><li>CACNB1</li><li>CACNB2</li><li>CACNB3</li><li>CACNA2D2</li><li>CACNG6</li><li>CACNA1F</li><li>CACNB4</li><li>CACNG1</li><li>CACNG5</li><li>CACNG3</li><li>CACNG7</li><li>CACNG4</li><li>CACNG8</li><li>CLCNKA</li><li>CLIC6</li><li>CLIC2</li><li>CLCA4</li><li>CLCC1</li><li>CLCA3P</li><li>CNGA4</li><li>CLCN6</li><li>CLIC5</li><li>CLCA2</li><li>CLIC3</li><li>CATSPER4</li><li>CATSPER2</li><li>FAM26F</li><li>FAM26D</li><li>FAM26E</li><li>FXYD3</li><li>FXYD7</li><li>FXYD6P3</li><li>GABRA6</li><li>GABRG3</li><li>GABRR3</li><li>GABRB1</li><li>GABRG1</li><li>GABRP</li><li>GABRA5</li><li>GABRR1</li><li>GPR89A</li><li>GLRA3</li><li>GLRA4</li><li>GLRB</li><li>GPR89A</li><li>GRID1</li><li>GRIK3</li><li>HCN3</li><li>KCND1</li><li>KCNK4</li><li>KCNK7</li><li>KCNS1</li><li>KCNS2</li><li>KCNIP1</li><li>KCNJ15</li><li>KCNMB4</li><li>KCNK16</li><li>ITPR2</li><li>KCNH6</li><li>KCNH7</li><li>KCNH8</li><li>KCNK12</li><li>KCNMB3</li><li>KCNA6</li><li>KCNG2</li><li>KCNN1</li><li>KCNAB2</li><li>KCNIP4</li><li>KCNC4</li><li>KCNG3</li><li>KCNH4</li><li>KCNS3</li><li>KCNAB3</li><li>KCNG4</li><li>KCNA7</li><li>KCNT1</li><li>KCNJ14</li><li>KCNJ18</li><li>KCNV1</li><li>LRRC52</li><li>LRRC55</li><li>LRRC38</li><li>PANX3</li><li>PANX2</li><li>PLLP</li><li>PKD1L2</li><li>PKD2L2</li><li>PKD1L3</li><li>SLC26A1</li><li>SCN3B</li><li>SCN7A</li><li>SCNN1D</li><li>SCN2B</li><li>SCNN1B</li><li>TMC5</li><li>TMC7</li><li>TMEM38B</li><li>TMC3</li><li>TMC4</li><li>TTYH2</li><li>TTYH1</li>
+					</ul>
+				</li>
+				<li>GPCRs
+				<ul>
+					<li>HTR1E</li><li>HTR5A</li><li>ADGRD1</li><li>ADGRE2</li><li>ADGRF5</li><li>ADGRG4</li><li>ADGRG7</li><li>ADGRB2</li><li>ADGRF2</li><li>ADGRF4</li><li>CHRM5</li><li>ADGRF1</li><li>ADGRG3</li><li>ADGRG5</li><li>ADGRD2</li><li>ADGRE1</li><li>ADGRE3</li><li>ADGRF3</li><li>ADGRG2</li><li>ADGRB3</li><li>ADGRA1</li><li>ADGRE4P</li><li>ADGRL3</li><li>CELSR2</li><li>GPR137</li><li>FZD10</li><li>GPR32P1</li><li>GALR3</li><li>GPR139</li><li>GPR149</li><li>GPR171</li><li>GPR174</li><li>GPR142</li><li>GPR151</li><li>GPR156</li><li>GPRC5D</li><li>GPR153</li><li>GPR33</li><li>GPR25</li><li>GPR45</li><li>GPR75</li><li>GPR88</li><li>GNRHR2</li><li>GPR150</li><li>GPR18</li><li>GPR62</li><li>GPR82</li><li>GPR87</li><li>GPR101</li><li>GPR173</li><li>GPRC5C</li><li>GPR32</li><li>GPR63</li><li>GPRC5B</li><li>GPR12</li><li>GPR135</li><li>GPR141</li><li>GPR146</li><li>GPR152</li><li>GPR157</li><li>GPR160</li><li>GPR42</li><li>GPR52</li><li>GPR143</li><li>GPR162</li><li>GPR26</li><li>GPR21</li><li>GPR61</li><li>GPR20</li><li>GPR27</li><li>GPR31</li><li>GPR34</li><li>GPR39</li><li>GPR4</li><li>GPR6</li><li>GPR78</li><li>GPR85</li><li>GPR19</li><li>GPR22</li><li>HCAR1</li><li>HCAR3</li><li>MAS1L</li><li>LPAR6</li><li>MRGPRX4</li><li>MRGPRG</li><li>MRGPRX2</li><li>MTNR1A</li><li>MRGPRE</li><li>MRGPRX3</li><li>NPBWR1</li><li>NPBWR2</li><li>NPY6R</li><li>NPY2R</li><li>NPY5R</li><li>OPN1MW2</li><li>OXGR1</li><li>P2RY10</li><li>OXER1</li><li>RRH</li><li>P2RY11</li><li>PROKR1</li><li>QRFPR</li><li>GPRC5A</li><li>RXFP3</li><li>RXFP4</li><li>S1PR4</li><li>SSTR4</li><li>SUCNR1</li><li>TAS2R31</li><li>TAS2R14</li><li>TAAR3</li><li>TAS2R10</li><li>TAS2R41</li><li>TAS2R43</li><li>TAS2R50</li><li>TAAR2</li><li>TAAR8</li><li>TAS2R19</li><li>TAS2R7</li><li>TAS2R9</li><li>TAS2R13</li><li>TAS2R20</li><li>TAS2R40</li><li>TAS2R60</li><li>TAS2R3</li><li>TAS2R4</li><li>TAS2R5</li><li>TAS2R16</li><li>TAS2R8</li><li>TAAR9</li><li>TAS2R39</li><li>TAS2R1</li><li>TAS2R30</li><li>TAS2R42</li><li>TAS2R46</li><li>TPRA1</li><li>AVPR1B</li><li>VN1R17P</li><li>VN1R3</li><li>VN1R5</li><li>VN1R1</li><li>VN1R4</li><li>VN1R2</li>
+ 				</ul>
+ 				</li>
+			</ul>
+		</div>
+
+		<div id="scripts">
+			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"></script>
+		</div>
+
+	</body>
+</html>
