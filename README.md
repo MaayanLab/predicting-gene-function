@@ -35,4 +35,4 @@ The main idea is to predict new protein-protein interactions based on their expr
 
 ## Miscellaneous
 1. In creating the violin plots, the violin data from the data folder should be uploaded beforehand.
-2. For convenience, an R vector-ready list of the Enrichr library names is in the data folder. 
+2. For convenience, an R-vector-ready list of the Enrichr library names is in the data folder. 
