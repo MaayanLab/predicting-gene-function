@@ -8,8 +8,10 @@ The main idea is to predict gene function by creating new gene libraries based o
 1. Download the expression matrix data set of interest and move it to your working directory.
     1. The ARCHS4 Human and Mouse data sets are available on the ARCHS4 website/chrome extension.
     2. The GTEX and CCLE data sets are available on their respective websites.
-2. Run monster_fullQN.R for the Human and Mouse data sets. Run monster_fullGtex.R for GTEX, and run monster_fullCcle.R for CCLE.
-3. This will create new GMT text files in your working directory.
+2. Download Bioconductor package preprocessCore. Download R packages pracma and ggplot2 (for later violin plot creation).
+3. Ensure that functions have been created (specifically, the toGmt functions available in the R-Scripts-GMT folder).
+3. Run monster_fullQN.R for the Human and Mouse data sets. Run monster_fullGtex.R for GTEX, and run monster_fullCcle.R for CCLE.
+4. This will create new GMT text files in your working directory.
 
 #### Making Violin Plots
 1. Follow the instructions within the commented R script, graphics(2).R. Use it as a template for creating new violin plots
@@ -27,9 +29,9 @@ The main idea is to predict new protein-protein interactions based on their expr
     3. An R list with a filtered version of the original PPI, which is necessary for the creation of Venn diagrams.
 
 #### Making Venn Diagrams
-1. Convert the newly generated PPIs from set form to paired form (a function is available for this in the ppiConversionFunctions.R script.)
+1. Convert the newly generated PPIs from set form to paired form (a function is available for this in the ppiConversionFunctions.R script).
 2. Use the pertinent Venn diagram R script.
-    1. 
+    1. For example, a triple Venn diagram of all the old PPI files can be created by the R script, intVenn_allOld.R.
 
 ## Miscellaneous
 1. In creating the violin plots, the violin data from the data folder should be uploaded beforehand.
