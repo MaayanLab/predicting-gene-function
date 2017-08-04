@@ -1,3 +1,5 @@
 Folder contains miscellaneous data:
 * Data necessary to make violin plots for GMTs and PPIs
+  ** Note: The violin data needs to be uploaded and converted to an R data.frame before being used. The NA values should be removed,
+     and the columns should be named c("Genes", "AUC", "Expression"). Understanding of the graphics(2).R script will help in this.
 * Result of t-test on the GMT AUCs
