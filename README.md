@@ -16,6 +16,7 @@ The main idea is to predict gene function by creating new gene libraries based o
 #### Making Violin Plots
 1. Follow the instructions within the commented R script, graphics(2).R. Use it as a template for creating new violin plots
     1. Note: You will need the AUC data for each library to make its violin plot. This data is available in the data folder.
+        1. Note: This data needs to be converted to an R data.frame. The graphics(2).R script should provide indications as to how the violin data must be formatted before making violin plots with ggplot2.
 
 ## PPIs
 The main idea is to predict new protein-protein interactions based on their expression data correlations.
