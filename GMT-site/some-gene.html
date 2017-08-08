@@ -1,15 +1,98 @@
 <!doctype html>
-<title>{{some_gene}}</title>
+
+<html>
+
+<style type = "text/css">
+	table {
+		border-collapse: collapse;
+		table-layout: fixed;
+	}
+
+	table.center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	thead {
+		line-height: 44px;
+		color:#648880;
+	}
+
+	tbody {
+		color: black;
+	}
+
+	thead th {
+		font-size: 22px;
+		padding-left: 15px;
+		text-align: left;
+		width: 10%;
+	}
+
+	th,	td {
+		border: 1px solid #D5D8DC;
+		padding: 10px 5px;
+		width: 50px;
+	}
+
+</style>
+
+<head>
+	<title>{{some_gene}}</title>
+	<!-- <link rel = "stylesheet" type = "text/css" href = "static/style_some_gene.css" /> -->
+</head>
 
 <div class="topnav" id="myTopnav">
 	<!-- <a href="test-home.html">Home</a> -->
 	<a href="{{ url_for('testhome') }}">Home</a>
 </div> 
 
+<h1>{{some_gene.upper()}}</h1>
+
 <body>
-	<h2> {{ some_gene.upper() }} </h2>
+<!-- 	<h2> {{ some_gene.upper() }} </h2>
 
 	{% for x in gene_list %}
 	<p> {{ x }} </p>
-	{% endfor %}
+	{% endfor %} -->
+
+	<div class = "form-group">
+		<label class = "control-label">Choose New Library Type:</label>
+		<select class="form-control" id = "layout">
+			<option value = "z-score">Z-Score</option>
+			<option value = "size">Size</option>
+		</select>
+	</div>
+
+	<table>
+		<caption> <h2> Predicted Sets by Library </h3> </caption>
+		<thead class="bg-col">
+			<tr>
+				<th scope = "col"> Library </th>
+				<th scope = "col"> Set </th>
+			</tr>
+		</thead>
+		<tbody>
+<!-- 		<tr>
+			<td>
+				{{gene_list}}
+			</td>
+		</tr> -->
+
+			{% for line in gene_list %}
+			<tr>
+				<td> <h4> {{ line.split('\t')[0] }} </h4> </td>
+				<td> {% for item in line.split('\t')[2:] %} 
+				<list> {{ item }} <br></list>
+				{% endfor %}
+				</td>
+			</tr>
+			{% endfor %}
+		
+
+		</tbody>
+	</table>
+
 </body>
+
+</html>
