@@ -1,5 +1,5 @@
 from flask import Flask, request, url_for, redirect, render_template
-from wtforms import Form, BooleanField, StringField, PasswordField, validators
+from wtforms import Form, StringField, validators
 from string import Template
 app = Flask(__name__)
 
@@ -63,6 +63,10 @@ def some_gene_page(some_gene):
 		gene_list = gene_textFile.readlines()
 
 	gene_list = [x.strip() for x in gene_list]
+
+	# gene_list_split = []
+
+	# gene_list_split = [line.split('\t') for line in gene_list]
 
 	return render_template('some-gene.html', some_gene = some_gene, gene_list = gene_list)
 
