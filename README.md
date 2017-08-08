@@ -1,4 +1,4 @@
-# test-site-files
+# predicting-gene-function
 
 ## GMTs
 The main idea is to predict gene function by creating new gene libraries based on their expression data correlations.
