@@ -1,0 +1,90 @@
+Achilles_fitness_decrease		Gene is not in new version of library
+Achilles_fitness_increase		JJN3-haematopoietic and lymphoid tissue
+Aging_Perturbations_from_GEO_down		Gene is not in new version of library
+Aging_Perturbations_from_GEO_up		Gene is not in new version of library
+BioCarta_2013		Gene is not in new version of library
+BioCarta_2015		Gene is not in new version of library
+BioCarta_2016		Gene is not in new version of library
+ChEA_2013		Gene is not in new version of library
+ChEA_2015		Gene is not in new version of library
+ChEA_2016		Gene is not in new version of library
+Chromosome_Location		chr15q23
+dbGaP		Gene is not in new version of library
+Disease_Perturbations_from_GEO_down		Gene is not in new version of library
+Disease_Perturbations_from_GEO_up		Gene is not in new version of library
+Disease_Signatures_from_GEO_down_2014		Gene is not in new version of library
+Disease_Signatures_from_GEO_up_2014		Gene is not in new version of library
+Drug_Perturbations_from_GEO_2014		Gene is not in new version of library
+Drug_Perturbations_from_GEO_down		Gene is not in new version of library
+Drug_Perturbations_from_GEO_up		Gene is not in new version of library
+ENCODE_and_ChEA_Consensus_TFs_from_ChIP-X		Gene is not in new version of library
+ENCODE_Histone_Modifications_2013		HELAS3_H3K36me3
+ENCODE_Histone_Modifications_2015		Gene is not in new version of library
+ENCODE_TF_ChIP-seq_2014		Gene is not in new version of library
+ENCODE_TF_2015		Gene is not in new version of library
+Epigenomics_Roadmap_HM_ChIP-seq		H3K9me3 iPS DF 6.9
+ESCAPE		Gene is not in new version of library
+Genome_Browser_PWMs		Gene is not in new version of library
+GO_Biological_Process_2013		Gene is not in new version of library
+GO_Biological_Process_2015		peripheral nervous system neuron development (GO:0048935)	mammary gland epithelial cell differentiation (GO:0060644)
+GO_Biological_Process_2017		inositol phosphate dephosphorylation (GO:0046855)	mammary gland epithelial cell differentiation (GO:0060644)	epithelial cell migration (GO:0010631)	thymus development (GO:0048538)
+GO_Cellular_Component_2013		Gene is not in new version of library
+GO_Cellular_Component_2015		TORC2 complex (GO:0031932)
+GO_Cellular_Component_2017		TORC2 complex (GO:0031932)
+GO_Molecular_Function_2013		Gene is not in new version of library
+GO_Molecular_Function_2015		Gene is not in new version of library
+GO_Molecular_Function_2017		galanin receptor activity (GO:0004966)
+HomoloGene		Gene is not in new version of library
+Human_Gene_Atlas		Gene is not in new version of library
+Human_Phenotype_Ontology		Muscle fibrillation (HP:0010546)	Sensory axonal neuropathy (HP:0003390)	Abnormality of the distal phalanges of the toes (HP:0010182)	Down-sloping shoulders (HP:0200021)	Aplasia/Hypoplasia of the phalanges of the thumb (HP:0009658)	Tongue fasciculations (HP:0001308)	Retinal atrophy (HP:0001105)	Short phalanx of the thumb (HP:0009660)
+HumanCyc_2015		Gene is not in new version of library
+Humancyc_2016		Gene is not in new version of library
+huMAP		Gene is not in new version of library
+KEA_2013		Gene is not in new version of library
+KEA_2015		EPHB3	IRAK2
+KEGG_2013		Gene is not in new version of library
+KEGG_2015		Gene is not in new version of library
+KEGG_2016		Gene is not in new version of library
+Kinase_Perturbations_from_GEO_down		Gene is not in new version of library
+Kinase_Perturbations_from_GEO_up		Gene is not in new version of library
+Ligand_Perturbations_from_GEO_down		Gene is not in new version of library
+Ligand_Perturbations_from_GEO_up		Gene is not in new version of library
+LINCS_L1000_Ligand_Perturbations_down		Gene is not in new version of library
+LINCS_L1000_Ligand_Perturbations_up		Gene is not in new version of library
+MCF7_Perturbations_from_GEO_down		Gene is not in new version of library
+MCF7_Perturbations_from_GEO_up		Gene is not in new version of library
+MGI_Mammalian_Phenotype_2013		Gene is not in new version of library
+MGI_Mammalian_Phenotype_2017		MP:0000022_abnormal_ear_shape	MP:0000423_delayed_hair_regrowth	MP:0000468_abnormal_esophageal_epithelium_morphology	MP:0000580_deformed_nails	MP:0000680_absent_parathyroid_glands	MP:0001068_abnormal_mandibular_nerve_branching	MP:0001121_uterus_hypoplasia	MP:0002019_abnormal_tumor_incidence	MP:0002258_abnormal_cricoid_cartilage_morphology	MP:0003159_abnormal_esophageal_smooth_muscle_morphology	MP:0003165_absent_superior_semicircular_canal	MP:0003865_lymph_node_inflammation	MP:0003916_decreased_heart_left_ventricle_weight	MP:0004126_thin_hypodermis	MP:0004310_small_otic_vesicle	MP:0004314_absent_inner_ear_vestibule	MP:0004568_fusion_of_glossopharyngeal_and_vagus_nerve	MP:0004612_fusion_of_vertebral_bodies	MP:0004896_abnormal_endometrium_morphology	MP:0004912_absent_mandibular_coronoid_process	MP:0004923_absent_common_crus	MP:0005192_increased_motor_neuron_number	MP:0006162_thick_eyelids	MP:0006340_abnormal_fourth_pharyngeal_arch_morphology	MP:0008003_achlorhydria	MP:0008332_decreased_lactotroph_cell_number	MP:0010688_hair_follicle_outer_rooth_sheath_hyperplasia	MP:0010729_absent_arcus_anterior	MP:0010845_decreased_effector_memory_CD4-positive,_alpha-beta_T_cell_number	MP:0011200_abnormal_extraembryonic_coelom_morphology	MP:0011224_abnormal_lymph_node_medullary_cord_morphology	MP:0012493_absent_pharyngeal_arch_arteries
+MGI_Mammalian_Phenotype_Level_3		Gene is not in new version of library
+MGI_Mammalian_Phenotype_Level_4		Gene is not in new version of library
+Microbe_Perturbations_from_GEO_down		Gene is not in new version of library
+Microbe_Perturbations_from_GEO_up		Gene is not in new version of library
+Mouse_Gene_Atlas		Gene is not in new version of library
+MSigDB_Computational		Gene is not in new version of library
+MSigDB_Oncogenic_Signatures		Gene is not in new version of library
+NCI-60_Cancer_Cell_Lines		Gene is not in new version of library
+NCI-Nature_2015		Gene is not in new version of library
+NCI-Nature_2016		Gene is not in new version of library
+NURSA_Human_Endogenous_Complexome		Gene is not in new version of library
+OMIM_Disease		Gene is not in new version of library
+OMIM_Expanded		Gene is not in new version of library
+Panther_2015		Gene is not in new version of library
+Panther_2016		Gene is not in new version of library
+Pfam_InterPro_Domains		Gene is not in new version of library
+Phosphatase_Substrates_from_DEPOD		Gene is not in new version of library
+PPI_Hub_Proteins		Gene is not in new version of library
+Reactome_2013		Gene is not in new version of library
+Reactome_2015		Gene is not in new version of library
+Reactome_2016		Gene is not in new version of library
+TargetScan_microRNA		Gene is not in new version of library
+TF-LOF_Expression_from_GEO		Gene is not in new version of library
+Tissue_Protein_Expression_from_Human_Proteome_Map		Gene is not in new version of library
+Tissue_Protein_Expression_from_ProteomicsDB		Gene is not in new version of library
+Transcription_Factor_PPIs		MEIS1
+TRANSFAC_and_JASPAR_PWMs		Gene is not in new version of library
+Virus_Perturbations_from_GEO_down		Gene is not in new version of library
+Virus_Perturbations_from_GEO_up		Gene is not in new version of library
+VirusMINT		Gene is not in new version of library
+WikiPathways_2013		Gene is not in new version of library
+WikiPathways_2015		Gene is not in new version of library
+WikiPathways_2016		Gene is not in new version of library
