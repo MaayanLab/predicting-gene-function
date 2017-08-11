@@ -216,8 +216,8 @@ for (txtFile in gmtNames) {
 	
   # create text files and do not store "allCrrAvg"
   # so all the new GMTs will be saved as text files
-  toGmt_size(allCrrAvg, paste0("newGmtSize_", txtFile), go)
-  toGmt_z(allCrrAvg, paste0("newGmt(3)_", txtFile), 3)
+  toGmt_size(allCrrAvg, paste0("newGmtSize_GTEX_", txtFile), go)
+  toGmt_z(allCrrAvg, paste0("newGmt(3)_GTEX_", txtFile), 3)
 
   write.csv(auc, paste0("tempGtexAUC", txtFile, ".csv"))
 
