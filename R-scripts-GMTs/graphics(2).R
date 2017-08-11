@@ -180,14 +180,3 @@ pMgi <- ggplot(mgiV, aes(x = Expression, y = AUC,
 # grid.arrange(pCh, pEnc, pGBio, pGCell, pGMol, pKea, pKgg, pMgi,legend,
 #              ncol = 4, nrow = 3, layout_matrix = rbind(c(1, 2, 3, 4), c(5, 6, 7, 8), c(9, 9, 9, 9)),
 #              heights = c(2.5, 2.5, .5))
-
-# This made a violin plot for the protein-protein interactions - run entirely separately.
-# pProt = ggplot(prot_violinData, aes(x = PPI, y  = AUC, fill = PPI)) + 
-#   geom_violin(trim = T, alpha = 0.5) + 
-#   ggtitle("Protein-Protein Interactions") + 
-#   geom_boxplot(outlier.shape = NA,width=0.1) + 
-#   scale_y_continuous(limits = c(0.2,1.0)) +
-#   theme(plot.title = element_text(size = 16),
-#         axis.title = element_text(size = 14),
-#         axis.text = element_text(size = 11))
-# annotation_custom(grob)
