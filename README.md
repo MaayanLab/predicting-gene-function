@@ -26,10 +26,10 @@ The main idea is to predict gene function by creating new gene libraries based o
 * Remove the NA values. 
 * Remember to convert from the uploaded .csv to an R data.frame. 
 * Once you run the code for getting the graph, you can remove the legend at will by using get_legend (in the script) and then setting the legend.position to "none". For example:
-'''
+```R
 legend = get_legend(pCh)
 pCh = pCh + theme(legend.position = "none")
-'''
+```
 
 ## PPIs
 The main idea is to predict new protein-protein interactions based on their expression data correlations.
@@ -43,7 +43,7 @@ The main idea is to predict new protein-protein interactions based on their expr
     3. An R list with a filtered version of the original PPI, which is necessary for the creation of Venn diagrams.
 
 #### Making Venn Diagrams
-1. Install the R packages data.table and VennDiagram.
+1. Install and load the R packages data.table and VennDiagram.
 2. Convert the newly generated PPIs from set form to paired form (a function is available for this in the ppiConversionFunctions.R script).
 3. Use the pertinent Venn diagram R script.
     1. For example, a triple Venn diagram of all the old PPI files can be created by the R script, intVenn_allOld.R.
