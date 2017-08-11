@@ -230,12 +230,17 @@ for (txtFile in gmtNames) {
     
   }
 
-  ccleCoAvg[[length(ccleCoAvg) + 1]] = allCrrAvg
-  names(ccleCoAvg)[length(ccleCoAvg)] = txtFile
+  # ccleCoAvg[[length(ccleCoAvg) + 1]] = allCrrAvg
+  # names(ccleCoAvg)[length(ccleCoAvg)] = txtFile
   
-  ccleAUC[[length(ccleAUC) + 1]] = auc
-  names(ccleAUC)[length(ccleAUC)] = txtFile
+  # ccleAUC[[length(ccleAUC) + 1]] = auc
+  # names(ccleAUC)[length(ccleAUC)] = txtFile
 
+  # create text files and do not store "allCrrAvg"
+  # so all the new GMTs will be saved as text files
+  toGmt_size(allCrrAvg, paste0("newGmtSize_CCLE_", txtFile), go)
+  toGmt_z(allCrrAvg, paste0("newGmt(3)_CCLE_", txtFile), 3)
+  
   print(mean(auc, na.rm = T))
 
 }
