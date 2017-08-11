@@ -36,3 +36,35 @@ for (a in 1:length(listVd)) {
   write.csv(get_ttest(listVd[[a]]), file= paste0(names(listVd)[a], "ttest.csv"))
   
 }
+
+get_ppiTtest <- function(data) {
+  
+  # split up the violin data matrices
+  hm = match("hu.MAP", data[, 3])
+  bp = match("BioPlex", data[, 3])
+  
+  # for Hu to Grid
+  statG = t.test(data[hm:(bp - 1), 2], data[1:(hm - 1), 2])$statistic
+  pValG = t.test(data[hm:(bp - 1), 2], data[1:(hm - 1), 2])$p.value
+  dAvG = t.test(data[hm:(bp - 1), 2], data[1:(hm - 1), 2])$estimate[1] - 
+         t.test(data[hm:(bp - 1), 2], data[1:(hm - 1), 2])$estimate[2]
+  
+  # for Hu to Plex
+  statC = t.test(data[hm:(bp - 1), 2], data[bp:nrow(data), 2])$statistic
+  pValC = t.test(data[hm:(bp - 1), 2], data[bp:nrow(data), 2])$p.value
+  dAvC = t.test(data[hm:(bp - 1), 2], data[bp:nrow(data), 2])$estimate[1] - 
+         t.test(data[hm:(bp - 1), 2], data[bp:nrow(data), 2])$estimate[2]
+  
+  results = matrix(c(statG, pValG, dAvG, statC, pValC, dAvC), nrow = 3, ncol = 2,
+                   dimnames = list(c("Statistic", "p-value", paste0(expression(delta), " Mean")), 
+                                   c("hu.MAP to BioGRID", "hu.MAP to BioPlex")))
+  
+  return(results)
+  
+}
+
+for (a in 1:length(listVd)) {
+  
+  write.csv(get_ttest(listVd[[a]]), file= paste0(names(listVd)[a], "ttest.csv"))
+  
+}
