@@ -208,11 +208,16 @@ for (txtFile in gmtNames) {
     
   }
 
-  gtexCoAvg[[length(gtexCoAvg) + 1]] = allCrrAvg
-  names(gtexCoAvg)[length(gtexCoAvg)] = txtFile
+  # gtexCoAvg[[length(gtexCoAvg) + 1]] = allCrrAvg
+  # names(gtexCoAvg)[length(gtexCoAvg)] = txtFile
   
-  gtexAUC[[length(gtexAUC) + 1]] = auc
-  names(gtexAUC)[length(gtexAUC)] = txtFile
+  # gtexAUC[[length(gtexAUC) + 1]] = auc
+  # names(gtexAUC)[length(gtexAUC)] = txtFile
+	
+  # create text files and do not store "allCrrAvg"
+  # so all the new GMTs will be saved as text files
+  toGmt_size(allCrrAvg, paste0("newGmtSize_", txtFile), go)
+  toGmt_z(allCrrAvg, paste0("newGmt(3)_", txtFile), 3)
 
   write.csv(auc, paste0("tempGtexAUC", txtFile, ".csv"))
 
