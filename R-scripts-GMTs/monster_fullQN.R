@@ -63,6 +63,7 @@ colnames(nEx) = samples[sample_locations]
 
 gmtNames = c("ChEA_2016.txt", "ENCODE_TF_2015.txt", "GO_Biological_Process_2017.txt", "GO_Cellular_Component_2017.txt", "GO_Molecular_Function_2017.txt", "KEA_2015.txt", "KEGG_2016.txt", "MGI_Mammalian_Phenotype_Level_4.txt")
 
+# Some of the largest Enrichr libraries took too long to process - for example, the first one ("Genes_Associated_with...")
 # gmtNames = c("Genes_Associated_with_NIH_Grants.txt", "Cancer_Cell_Line_Encyclopedia.txt", "Achilles_fitness_decrease.txt", "Achilles_fitness_increase.txt", "Aging_Perturbations_from_GEO_down.txt", "Aging_Perturbations_from_GEO_up.txt", 
 #   "Allen_Brain_Atlas_down.txt", "Allen_Brain_Atlas_up.txt", "BioCarta_2013.txt", "BioCarta_2015.txt", "BioCarta_2016.txt", "BioPlex_2017.txt", "ChEA_2013.txt", "ChEA_2015.txt", "ChEA_2016.txt", "Chromosome_Location.txt", "CORUM.txt", 
 #   "dbGaP.txt", "Disease_Perturbations_from_GEO_down.txt", "Disease_Perturbations_from_GEO_up.txt", "Disease_Signatures_from_GEO_down_2014.txt", "Disease_Signatures_from_GEO_up_2014.txt", "Drug_Perturbations_from_GEO_2014.txt", 
@@ -87,7 +88,7 @@ gmtNames = c("ChEA_2016.txt", "ENCODE_TF_2015.txt", "GO_Biological_Process_2017.
 listCoAvg = list()
 listAUC = list()
 
-# HERE BEGINS THE FOR LOOP THAT PRODUCES AUC AND average correlation matrices FOR EACH OF THE GMT FILES 
+# HERE BEGINS THE FOR LOOP THAT PRODUCES AUC AND NEW GMTs FOR EACH OF THE GMT FILES 
 for (txtFile in gmtNames) {
 
   print(txtFile)
